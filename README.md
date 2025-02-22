@@ -1,4 +1,4 @@
-#mini-youtube#
+
 para inicila abra una cmd y pongan node app.js.
 
 los archivos de html css y javascript esta en la carpeta public
