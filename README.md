@@ -12,3 +12,8 @@ si quieres canbiar la imagen que te aparece ariba ve a public imagens y canbia l
 para borrar videos ve al al archivo videos.json y elimine el que no quiera que este 
 
 para ver la pagina ve al navegador y ponga http://localhost:3000 "canbiar localgos en el archivo app.js"
+
+dependecias 
+"npm init -y
+npm install express multer sqlite3
+"
