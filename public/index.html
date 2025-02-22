@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniYouTube</title>
+    <link id="favicon" rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>MiniYouTube</h1>
+    </header>
+
+    <!-- Sección de Subir Video -->
+    <section class="upload-section" aria-labelledby="upload-title">
+        <h2 id="upload-title">Subir Video</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="text" name="title" placeholder="Título del video" required aria-label="Título del video">
+            <textarea name="description" placeholder="Descripción del video" required aria-label="Descripción del video"></textarea>
+            <input type="file" name="video" accept="video/mp4" required aria-label="Seleccionar archivo de video">
+            <button type="submit" aria-label="Subir Video">Subir Video</button>
+        </form>
+    </section>
+
+    <!-- Sección de Videos -->
+    <section class="videos-section" aria-labelledby="recent-videos-title">
+        <h2 id="recent-videos-title">Videos Recientes</h2>
+        <div id="video-list" role="list"></div>
+    </section>
+
+    <!-- Modal de Visualización de Video -->
+    <div class="modal" id="videoModal" role="dialog" aria-hidden="true" aria-labelledby="videoModalTitle">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Cerrar" onclick="closeModal()">Cerrar</button>
+            <video id="modalVideo" controls>
+                <source src="" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
