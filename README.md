@@ -3,7 +3,7 @@ para inicila abra una cmd y pongan node app.js.
 
 los archivos de html css y javascript esta en la carpeta public
 
-los videos que subas se huardan el la carpeta uploads
+los videos que subas se guardan el la carpeta uploads
 
 
 
